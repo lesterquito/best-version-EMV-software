@@ -1,2 +1,0 @@
-# best version EMV software
-

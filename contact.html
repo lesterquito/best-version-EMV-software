@@ -3,43 +3,18 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact — Aether Study</title>
-  <meta name="description" content="Get in touch regarding this educational resource.">
+  <title>Contact — X2 Smartcard Allinone</title>
+  <meta name="description" content="Contact X2 Smartcard Allinone.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css">
-  <style>
-    /* Header logo styling (same as index) */
-    .logo img {
-      height: 22px;
-      width: auto;
-      display: block;
-      transition: opacity 0.2s ease;
-    }
-    .logo:hover img {
-      opacity: 0.85;
-    }
-
-    /* Center the footer */
-    .footer .footer-inner {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      width: 100%;
-    }
-
-    .footer .footer-nav {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-wrap: wrap;
-      gap: 1.5rem;
-    }
-  </style>
 </head>
 <body>
   <header class="header">
     <div class="header-inner">
       <a href="index.html" class="logo">
-        <img src="images/X2 SmartCard Allinone LOGO.png" alt="X2 Smartcard Allinone">
+        <img src="images/logo.png" alt="X2 Smartcard Allinone">
       </a>
       <nav class="nav" id="mainNav">
         <a href="index.html">Home</a>
@@ -49,7 +24,7 @@
         <a href="about.html">About</a>
         <a href="contact.html" class="active">Contact</a>
       </nav>
-      <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu" aria-expanded="false">
         <span></span>
         <span></span>
         <span></span>
@@ -59,10 +34,9 @@
 
   <section class="page-header">
     <div class="container">
+      <p class="eyebrow">Support</p>
       <h1>Contact</h1>
-      <p class="lead">
-        Send a message.
-      </p>
+      <p class="lead">Send a message.</p>
     </div>
   </section>
 
@@ -108,15 +82,15 @@
           <a href="about.html">About</a>
           <a href="contact.html">Contact</a>
         </nav>
+        <p class="footer-copy">© 2026 X2 Smartcard Allinone. All rights reserved.</p>
       </div>
     </div>
   </footer>
-
   <script src="js/main.js"></script>
   <script>
     function handleSubmit(e) {
       e.preventDefault();
-      alert('Thank you. This is a demonstration form. In a production environment your message would be sent to the site administrator.');
+      alert("Thank you. This is a demonstration form. In a production environment your message would be sent to the site administrator.");
       e.target.reset();
       return false;
     }

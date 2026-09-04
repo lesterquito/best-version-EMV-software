@@ -3,131 +3,18 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>About — X2 EMV Smartcard Allinone</title>
+  <title>About — X2 Smartcard Allinone</title>
   <meta name="description" content="Origins, current status and future direction of the EMV standard.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css">
-  <style>
-    /* ========== GLOBAL CENTERING ========== */
-    body {
-      text-align: center;
-    }
-    .container {
-      text-align: center;
-    }
-
-    /* ========== HEADER LOGO (left aligned) ========== */
-    .header-inner {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      width: 100%;
-    }
-    .logo {
-      margin-right: auto;
-      display: flex;
-      align-items: center;
-    }
-    .logo img {
-      height: 22px;
-      width: auto;
-      display: block;
-      transition: opacity 0.2s ease;
-    }
-    .logo:hover img {
-      opacity: 0.85;
-    }
-
-    /* ========== PAGE TITLE ========== */
-    .page-title {
-      padding: 3.5rem 0 2rem;
-      text-align: center;
-    }
-    .page-title h1 {
-      font-size: 2.6rem;
-      font-weight: 700;
-      margin: 0;
-      letter-spacing: -0.02em;
-    }
-
-    /* ========== CONTENT SECTIONS ========== */
-    .content-section {
-      max-width: 820px;
-      margin: 0 auto 3.5rem;
-      text-align: left;
-      line-height: 1.7;
-    }
-    .content-section h2 {
-      font-size: 1.55rem;
-      font-weight: 700;
-      margin-bottom: 1.25rem;
-      text-align: center;
-      letter-spacing: -0.01em;
-    }
-    .content-section p {
-      margin-bottom: 1.15rem;
-      color: #333;
-    }
-    .content-section ul {
-      margin: 1.2rem 0 1.5rem 1.4rem;
-      padding: 0;
-    }
-    .content-section li {
-      margin-bottom: 0.55rem;
-    }
-
-    /* Section divider */
-    .section-divider {
-      width: 60px;
-      height: 2px;
-      background: #ccc;
-      margin: 0 auto 3.5rem;
-    }
-
-    /* Future table styling */
-    .future-table {
-      width: 100%;
-      border-collapse: collapse;
-      margin: 1.5rem 0 1.8rem;
-      font-size: 0.95rem;
-    }
-    .future-table th,
-    .future-table td {
-      border: 1px solid #e0e0e0;
-      padding: 0.75rem 1rem;
-      text-align: left;
-      vertical-align: top;
-    }
-    .future-table th {
-      background: #f5f5f5;
-      font-weight: 600;
-    }
-
-    /* ========== FOOTER CENTERING ========== */
-    .footer {
-      text-align: center;
-      margin-top: 4rem;
-    }
-    .footer-inner {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      width: 100%;
-    }
-    .footer-nav {
-      display: flex;
-      justify-content: center;
-      gap: 1.5rem;
-      flex-wrap: wrap;
-    }
-  </style>
 </head>
 <body>
-
-  <!-- Header -->
   <header class="header">
     <div class="header-inner">
       <a href="index.html" class="logo">
-        <img src="images/X2 SmartCard Allinone LOGO.png" alt="X2 Smartcard Allinone">
+        <img src="images/logo.png" alt="X2 Smartcard Allinone">
       </a>
       <nav class="nav" id="mainNav">
         <a href="index.html">Home</a>
@@ -137,7 +24,7 @@
         <a href="about.html" class="active">About</a>
         <a href="contact.html">Contact</a>
       </nav>
-      <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu" aria-expanded="false">
         <span></span>
         <span></span>
         <span></span>
@@ -145,117 +32,112 @@
     </div>
   </header>
 
-  <!-- Page Title -->
-  <section class="page-title">
+  <section class="page-header">
     <div class="container">
+      <p class="eyebrow">About</p>
       <h1>About</h1>
+      <p class="lead">Origins, current status and future direction of the EMV standard.</p>
     </div>
   </section>
 
-  <!-- 1. Origins and History -->
-  <section class="content-section">
-    <h2>1. Origins and History</h2>
-    <p>
-      The idea of embedding a microprocessor in a plastic card dates back to the late 1960s, when German engineers Helmut Gröttrup and Jürgen Dethloff patented early smart-card concepts. Commercial use began in the 1970s–80s, mainly as prepaid telephone cards. France led payment applications: by 1986 Cartes Bancaires had introduced the first standardised chip payment cards, and by the early 1990s almost all French cards used chips plus PIN.
-    </p>
-    <p>
-      Other countries developed their own national systems, creating interoperability problems. In 1994, three major schemes — Europay, Mastercard, and Visa — formed a joint project to create a single global standard. This became known as EMV.
-    </p>
-    <p><strong>Key early milestones:</strong></p>
-    <ul>
-      <li>1996 — First public specification: EMV ’96 Integrated Circuit Card Specification for Payment Systems.</li>
-      <li>1998 — Production version 3.1.1 released.</li>
-      <li>1999 — EMVCo was established as an independent organisation to manage and evolve the specifications.</li>
-      <li>2000 — EMV 4.0 (often called EMV 2000) published, forming the foundation of the modern contact-chip specifications.</li>
-    </ul>
-    <p>
-      Europe adopted EMV rapidly in the early 2000s because magnetic-stripe fraud was high and the cost of migration was justified. The United Kingdom, for example, saw counterfeit fraud drop sharply after chip-and-PIN rollout. Other regions followed at different speeds. The United States lagged until the October 2015 liability shift, when the major networks made the party that had not invested in EMV technology (usually the merchant) responsible for counterfeit card-present fraud. This finally drove mass US adoption.
-    </p>
-    <p>
-      Membership of EMVCo expanded over time (JCB 2009, American Express earlier, UnionPay and Discover 2013), turning EMV into a truly global standard.
-    </p>
+  <section class="section">
+    <div class="container">
+      <section class="content-section">
+        <h2>1. Origins and History</h2>
+        <p>
+          The idea of embedding a microprocessor in a plastic card dates back to the late 1960s, when German engineers Helmut Gröttrup and Jürgen Dethloff patented early smart-card concepts. Commercial use began in the 1970s–80s, mainly as prepaid telephone cards. France led payment applications: by 1986 Cartes Bancaires had introduced the first standardised chip payment cards, and by the early 1990s almost all French cards used chips plus PIN.
+        </p>
+        <p>
+          Other countries developed their own national systems, creating interoperability problems. In 1994, three major schemes — Europay, Mastercard, and Visa — formed a joint project to create a single global standard. This became known as EMV.
+        </p>
+        <p><strong>Key early milestones:</strong></p>
+        <ul>
+          <li>1996 — First public specification: EMV ’96 Integrated Circuit Card Specification for Payment Systems.</li>
+          <li>1998 — Production version 3.1.1 released.</li>
+          <li>1999 — EMVCo was established as an independent organisation to manage and evolve the specifications.</li>
+          <li>2000 — EMV 4.0 (often called EMV 2000) published, forming the foundation of the modern contact-chip specifications.</li>
+        </ul>
+        <p>
+          Europe adopted EMV rapidly in the early 2000s because magnetic-stripe fraud was high and the cost of migration was justified. The United Kingdom, for example, saw counterfeit fraud drop sharply after chip-and-PIN rollout. Other regions followed at different speeds. The United States lagged until the October 2015 liability shift, when the major networks made the party that had not invested in EMV technology (usually the merchant) responsible for counterfeit card-present fraud. This finally drove mass US adoption.
+        </p>
+        <p>
+          Membership of EMVCo expanded over time (JCB 2009, American Express earlier, UnionPay and Discover 2013), turning EMV into a truly global standard.
+        </p>
+      </section>
+
+      <div class="section-divider"></div>
+
+      <section class="content-section">
+        <h2>2. The Standard Today (2026)</h2>
+        <p>EMV is no longer just “chip and PIN.” It is a family of specifications covering:</p>
+        <ul>
+          <li>Contact chip (the classic dipped card) — current core version is EMV 4.4 (Books 1–4).</li>
+          <li>Contactless chip (tap-to-pay cards and NFC mobiles) — defined in the Book C series of kernels (one per major scheme plus an EMVCo generic kernel).</li>
+          <li>Tokenisation — replacing the real card number (PAN) with a limited-use token.</li>
+          <li>EMV 3-D Secure — for card-not-present authentication.</li>
+          <li>Supporting programmes for product approval, testing (Level 1, 2 and 3), and public-key infrastructure.</li>
+        </ul>
+        <p>
+          Today virtually every major payment card issued worldwide carries an EMV chip. In mature markets, well over 90 % of card-present transactions use the chip (or a mobile wallet that uses the same EMV cryptography). Magnetic-stripe fallback still exists for compatibility but is increasingly restricted and carries higher fraud liability.
+        </p>
+        <p>
+          The technology remains highly effective against counterfeit cards because each transaction generates a unique dynamic cryptogram that cannot be reused.
+        </p>
+      </section>
+
+      <div class="section-divider"></div>
+
+      <section class="content-section">
+        <h2>3. The Future Direction</h2>
+        <p>EMVCo and the industry are evolving the standard in several clear directions:</p>
+        <table class="future-table">
+          <thead>
+            <tr>
+              <th>Area</th>
+              <th>Current Focus / Expected Direction</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Biometrics</td>
+              <td>Fingerprint sensors built into the card itself (biometric payment cards). Already in limited commercial issuance; expected to grow as a PIN alternative.</td>
+            </tr>
+            <tr>
+              <td>Digital credentials</td>
+              <td>EMVCo is developing a schema for Verifiable Digital Payment Credentials so digital identity wallets can be used securely for card payments.</td>
+            </tr>
+            <tr>
+              <td>Agentic / AI payments</td>
+              <td>Work has started on how EMV specifications can support AI agents initiating payments on behalf of users.</td>
+            </tr>
+            <tr>
+              <td>EV charging &amp; open-loop</td>
+              <td>Dedicated use-case specifications for seamless, interoperable payments at electric-vehicle chargers.</td>
+            </tr>
+            <tr>
+              <td>Contact feature sunsetting</td>
+              <td>Older, less-used contact-chip features are being phased out in stages to simplify implementations and improve security.</td>
+            </tr>
+            <tr>
+              <td>Numberless / token-first cards</td>
+              <td>Physical cards with no visible PAN, expiry or CVV — everything is tokenised or device-bound.</td>
+            </tr>
+            <tr>
+              <td>Deeper mobile &amp; identity integration</td>
+              <td>Stronger alignment with FIDO passkeys, device biometrics, and digital identity frameworks.</td>
+            </tr>
+          </tbody>
+        </table>
+        <p>
+          In short, the physical EMV chip is not disappearing, but it is becoming one secure element among many. The future emphasis is on seamless, privacy-preserving, multi-channel authentication — whether the credential lives on a plastic card, a phone, a watch, or a digital wallet — while keeping the same high level of cryptographic security that made EMV successful.
+        </p>
+        <p>
+          The standard continues to be maintained by EMVCo through regular Specification Bulletins and major version updates, ensuring global interoperability remains the priority even as new form factors and use cases appear.
+        </p>
+      </section>
+    </div>
   </section>
 
-  <div class="section-divider"></div>
-
-  <!-- 2. The Standard Today -->
-  <section class="content-section">
-    <h2>2. The Standard Today (2026)</h2>
-    <p>
-      EMV is no longer just “chip and PIN.” It is a family of specifications covering:
-    </p>
-    <ul>
-      <li>Contact chip (the classic dipped card) — current core version is EMV 4.4 (Books 1–4).</li>
-      <li>Contactless chip (tap-to-pay cards and NFC mobiles) — defined in the Book C series of kernels (one per major scheme plus an EMVCo generic kernel).</li>
-      <li>Tokenisation — replacing the real card number (PAN) with a limited-use token.</li>
-      <li>EMV 3-D Secure — for card-not-present authentication.</li>
-      <li>Supporting programmes for product approval, testing (Level 1, 2 and 3), and public-key infrastructure.</li>
-    </ul>
-    <p>
-      Today virtually every major payment card issued worldwide carries an EMV chip. In mature markets, well over 90 % of card-present transactions use the chip (or a mobile wallet that uses the same EMV cryptography). Magnetic-stripe fallback still exists for compatibility but is increasingly restricted and carries higher fraud liability.
-    </p>
-    <p>
-      The technology remains highly effective against counterfeit cards because each transaction generates a unique dynamic cryptogram that cannot be reused.
-    </p>
-  </section>
-
-  <div class="section-divider"></div>
-
-  <!-- 3. The Future Direction -->
-  <section class="content-section">
-    <h2>3. The Future Direction</h2>
-    <p>
-      EMVCo and the industry are evolving the standard in several clear directions:
-    </p>
-
-    <table class="future-table">
-      <thead>
-        <tr>
-          <th>Area</th>
-          <th>Current Focus / Expected Direction</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>Biometrics</td>
-          <td>Fingerprint sensors built into the card itself (biometric payment cards). Already in limited commercial issuance; expected to grow as a PIN alternative.</td>
-        </tr>
-        <tr>
-          <td>Digital credentials</td>
-          <td>EMVCo is developing a schema for Verifiable Digital Payment Credentials so digital identity wallets can be used securely for card payments.</td>
-        </tr>
-        <tr>
-          <td>Agentic / AI payments</td>
-          <td>Work has started on how EMV specifications can support AI agents initiating payments on behalf of users.</td>
-        </tr>
-        <tr>
-          <td>EV charging &amp; open-loop</td>
-          <td>Dedicated use-case specifications for seamless, interoperable payments at electric-vehicle chargers.</td>
-        </tr>
-        <tr>
-          <td>Contact feature sunsetting</td>
-          <td>Older, less-used contact-chip features are being phased out in stages to simplify implementations and improve security.</td>
-        </tr>
-        <tr>
-          <td>Numberless / token-first cards</td>
-          <td>Physical cards with no visible PAN, expiry or CVV — everything is tokenised or device-bound.</td>
-        </tr>
-        <tr>
-          <td>Deeper mobile &amp; identity integration</td>
-          <td>Stronger alignment with FIDO passkeys, device biometrics, and digital identity frameworks.</td>
-        </tr>
-      </tbody>
-    </table>
-
-    <p>
-      In short, the physical EMV chip is not disappearing, but it is becoming one secure element among many. The future emphasis is on seamless, privacy-preserving, multi-channel authentication — whether the credential lives on a plastic card, a phone, a watch, or a digital wallet — while keeping the same high level of cryptographic security that made EMV successful.
-    </p>
-    <p>
-      The standard continues to be maintained by EMVCo through regular Specification Bulletins and major version updates, ensuring global interoperability remains the priority even as new form factors and use cases appear.
-    </p>
-  </section>
-
-  <!-- Footer -->
   <footer class="footer">
     <div class="container">
       <div class="footer-inner">
@@ -268,10 +150,10 @@
           <a href="about.html">About</a>
           <a href="contact.html">Contact</a>
         </nav>
+        <p class="footer-copy">© 2026 X2 Smartcard Allinone. All rights reserved.</p>
       </div>
     </div>
   </footer>
-
   <script src="js/main.js"></script>
 </body>
 </html>

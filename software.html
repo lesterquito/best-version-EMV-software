@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Software — Aether Study</title>
+  <meta name="description" content="Software concepts, frameworks, and technical references related to payment system standards.">
+  <link rel="stylesheet" href="css/styles.css">
+  <style>
+    .software-showcase {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.75rem;
+      margin-top: 0.5rem;
+    }
+
+    .window {
+      background: var(--bg-elevated, #ffffff);
+      border: 1px solid var(--border, #e2e8f0);
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 4px 14px rgba(0, 0, 0, 0.06);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .window:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+    }
+
+    .window-titlebar {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      padding: 0.7rem 1rem;
+      background: var(--surface-muted, #f1f5f9);
+      border-bottom: 1px solid var(--border, #e2e8f0);
+      font-size: 0.8rem;
+      font-weight: 600;
+      color: var(--text-secondary, #64748b);
+      letter-spacing: 0.02em;
+      flex-shrink: 0;
+    }
+
+    .window-dots {
+      display: flex;
+      gap: 5px;
+    }
+
+    .window-dots span {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background: #cbd5e1;
+    }
+
+    .window-dots span:nth-child(1) { background: #ef4444; }
+    .window-dots span:nth-child(2) { background: #eab308; }
+    .window-dots span:nth-child(3) { background: #22c55e; }
+
+    .window-body {
+      padding: 1.4rem 1.35rem 1.5rem;
+      flex: 1;
+    }
+
+    /* Professional image-only windows (1, 2, 3) */
+    .window-body.image-only {
+      padding: 1.25rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #f8fafc;
+      min-height: 180px;
+    }
+
+    .window-body.image-only img {
+      width: 100%;
+      height: 170px;
+      object-fit: contain;
+      object-position: center;
+      border-radius: 6px;
+      display: block;
+    }
+
+    .window-body h3 {
+      margin: 0 0 0.55rem;
+      font-size: 1.15rem;
+      font-weight: 650;
+      color: var(--text-primary, #0f172a);
+      line-height: 1.3;
+    }
+
+    .window-body p {
+      margin: 0;
+      font-size: 0.925rem;
+      line-height: 1.55;
+      color: var(--text-secondary, #64748b);
+    }
+
+    .window-tag {
+      display: inline-block;
+      margin-top: 1rem;
+      padding: 0.25rem 0.65rem;
+      font-size: 0.72rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      border-radius: 4px;
+      background: var(--accent-soft, #e0f2fe);
+      color: var(--accent, #0284c7);
+    }
+
+    /* Header logo styling (same as index) */
+    .logo img {
+      height: 22px;
+      width: auto;
+      display: block;
+      transition: opacity 0.2s ease;
+    }
+    .logo:hover img {
+      opacity: 0.85;
+    }
+
+    /* Center the footer */
+    .footer .footer-inner {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+    }
+
+    .footer .footer-nav {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+    }
+  </style>
+</head>
+<body>
+  <header class="header">
+    <div class="header-inner">
+      <a href="index.html" class="logo">
+        <img src="images/X2 SmartCard Allinone LOGO.png" alt="X2 Smartcard Allinone">
+      </a>
+      <nav class="nav" id="mainNav">
+        <a href="index.html">Home</a>
+        <a href="software.html" class="active">Software</a>
+        <a href="hardware.html">Hardware</a>
+        <a href="products.html">Products</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <section class="page-header">
+    <div class="container">
+      <h1>Software for EMV Chip technology</h1>
+      <p class="lead">
+        Official Industry Approved EMV Chip Formatting Software
+      </p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="software-showcase">
+
+        <!-- Window 1 - Jcop Manager -->
+        <div class="window">
+          <div class="window-titlebar">
+            <div class="window-dots">
+              <span></span><span></span><span></span>
+            </div>
+            <span>Jcop Manager</span>
+          </div>
+          <div class="window-body image-only">
+            <img src="Images/jcop.png" alt="JCOP Manager">
+          </div>
+        </div>
+
+        <!-- Window 2 - ATR -->
+        <div class="window">
+          <div class="window-titlebar">
+            <div class="window-dots">
+              <span></span><span></span><span></span>
+            </div>
+            <span>ATR</span>
+          </div>
+          <div class="window-body image-only">
+            <img src="Images/telegram.png" alt="ATR">
+          </div>
+        </div>
+
+        <!-- Window 3 - CardPeek -->
+        <div class="window">
+          <div class="window-titlebar">
+            <div class="window-dots">
+              <span></span><span></span><span></span>
+            </div>
+            <span>CardPeek</span>
+          </div>
+          <div class="window-body image-only">
+            <img src="Images/cardpeek.png" alt="CardPeek">
+          </div>
+        </div>
+
+        <!-- Window 4 - Explains Jcop Manager -->
+        <div class="window">
+          <div class="window-titlebar">
+            <div class="window-dots">
+              <span></span><span></span><span></span>
+            </div>
+            <span>Jcop Manager</span>
+          </div>
+          <div class="window-body">
+            <h3>JCOP Card Management</h3>
+            <p>
+              Professional tool for managing Java Card OpenPlatform (JCOP) smart cards. Used to load applets, install EMV applications, manage card content, perform personalization, and handle secure key injection in laboratory and production environments.
+            </p>
+            <span class="window-tag">Card Management</span>
+          </div>
+        </div>
+
+        <!-- Window 5 - Explains ATR -->
+        <div class="window">
+          <div class="window-titlebar">
+            <div class="window-dots">
+              <span></span><span></span><span></span>
+            </div>
+            <span>ATR</span>
+          </div>
+          <div class="window-body">
+            <h3>Answer To Reset Analyzer</h3>
+            <p>
+              Utility focused on reading and interpreting the Answer To Reset (ATR) returned by a smart card. Helps identify the card operating system, supported protocols, historical bytes, and card capabilities — an essential first step in EMV card analysis and diagnostics.
+            </p>
+            <span class="window-tag">Diagnostics</span>
+          </div>
+        </div>
+
+        <!-- Window 6 - Explains CardPeek -->
+        <div class="window">
+          <div class="window-titlebar">
+            <div class="window-dots">
+              <span></span><span></span><span></span>
+            </div>
+            <span>CardPeek</span>
+          </div>
+          <div class="window-body">
+            <h3>Smart Card Explorer</h3>
+            <p>
+              Open-source tool designed for exploring the internal structure of smart cards. Allows reading of EMV file systems, application data, certificates and records. Widely used in research, education and laboratory environments for non-destructive card inspection and analysis.
+            </p>
+            <span class="window-tag">Analysis</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <nav class="footer-nav">
+          <a href="index.html">Home</a>
+          <a href="software.html">Software</a>
+          <a href="hardware.html">Hardware</a>
+          <a href="products.html">Products</a>
+          <a href="faq.html">FAQ</a>
+          <a href="about.html">About</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+      </div>
+    </div>
+  </footer>
+  <script src="js/main.js"></script>
+</body>
+</html>
